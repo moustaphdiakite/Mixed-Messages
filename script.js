@@ -25,4 +25,9 @@ const fortuneGenerator = {
     addObject(phrase) {
         this._object.push(phrase);
     },
+    fortumeMessage() {
+        let elementone = this._subject[Math.floor(Math.random * this._subject.length)];
+        let elementtwo = this._verb[Math.floor(Math.random * this._verb.length)];
+        let elementthree = this._object[Math.floor(Math.random * this._object.length)];
+    }
 };
