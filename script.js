@@ -1,9 +1,9 @@
-// Topic : A fortuner Teller 
+// Topic : A fortune Teller 
 
 const fortuneGenerator = {
     _subject: ["You"],
-    _verb: [],
-    _object: [],
+    _verb: ["will", "will not", "are going to", "are not going to", "shall", "shall not"],
+    _object: ["lose all your money in a divorce","find a beautiful woman to marry", "go through a brutal divorce","lose your life in your 50s", "be successful in your personal life", "enjoy good health", "live a long and happy life", "be invited to an exciting event", "become very wealthy", "have many children", "be lucky in your life", "have a lot of fame"],
     get subject() {
         return this._subject;
     },
@@ -21,6 +21,8 @@ const fortuneGenerator = {
     },
     set object(object) {
         this._object = object;
-    }
-
+    },
+    addObject(phrase) {
+        this._object.push(phrase);
+    },
 };
