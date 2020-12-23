@@ -35,4 +35,8 @@ const fortuneGenerator = {
     }
 };
 
-fortuneGenerator.fortumeMessage();
+function tellMyFate() {
+    fortuneGenerator.fortumeMessage();
+};
+
+tellMyFate();
