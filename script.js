@@ -42,3 +42,9 @@ const randomPicker = (array) => {
   const randomIndexNumber = Math.floor(Math.random() * arrayLength);
   return array[randomIndexNumber];
 };
+
+const messageOne = `${randomPicker(store.words)}${randomPicker(
+  store.quote
+)}${randomPicker(store.affirmation)}`;
+
+console.log(messageOne);
